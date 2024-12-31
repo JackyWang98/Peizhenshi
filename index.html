@@ -5,17 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>陪诊师聊天交互</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/fullpage.css" />
   </head>
   <body>
-    <div class="chat-container">
-      <div class="chat-box" id="chat-box">
-        <!-- 对话动态插入 -->
+    <div id="fullpage">
+      <div class="section" id="section1">
+        <h1>第一页内容</h1>
       </div>
-      <div class="prompt">
-        <button id="next-button">与小H聊天</button>
+      <div class="section" id="section2">
+        <div class="chat-container">
+          <div class="chat-box" id="chat-box" data-anchor="page1">
+            <!-- 对话动态插入 -->
+          </div>
+          <div class="prompt">
+            <button id="next-button">与小H聊天</button>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="section3">
+        <h1>第三页内容</h1>
       </div>
     </div>
 
+    <script src="js/fullpage.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      new fullpage("#fullpage", {
+        anchors: ["firstPage", "secondPage", "thirdPage"],
+        navigation: true,
+        navigationPosition: "right",
+      });
+    </script>
   </body>
 </html>
