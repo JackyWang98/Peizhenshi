@@ -6,6 +6,11 @@
     <title>陪诊师聊天交互</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/fullpage.css" />
+    <style>
+      .fp-watermark {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div id="fullpage">
@@ -18,9 +23,10 @@
             <!-- 对话动态插入 -->
           </div>
           <div class="prompt">
-            <button id="next-button">与小H聊天</button>
+            <button id="next-button">开始聊天</button>
           </div>
         </div>
+        <h1 id="why-young-people" style="display: none">为什么是年轻人？</h1>
       </div>
       <div class="section" id="section3">
         <h1>第三页内容</h1>
@@ -34,6 +40,7 @@
         anchors: ["firstPage", "secondPage", "thirdPage"],
         navigation: true,
         navigationPosition: "right",
+        credits: { enabled: false }, // 关闭右下角的标志
       });
     </script>
   </body>

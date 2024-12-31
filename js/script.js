@@ -36,6 +36,22 @@ function loadNextMessage() {
     // 滚动到底部
     chatBox.scrollTop = chatBox.scrollHeight;
 
+    // 检查是否是特定消息
+    if (message.text === "你可能想不到，其实是年轻人的需求量更大。") {
+      // 在这句话插入之后，改变按钮的文本和样式
+      nextButton.textContent = "为什么呢";
+      nextButton.style.backgroundColor = "#4CAF50"; // 例如，改变按钮背景颜色
+      nextButton.style.color = "#fff"; // 改变按钮文字颜色
+
+      // 添加按钮点击事件
+      nextButton.addEventListener("click", function () {
+        // 隐藏聊天框
+        document.querySelector(".chat-container").style.display = "none";
+        // 显示标题
+        document.getElementById("why-young-people").style.display = "block";
+      });
+    }
+
     // 增加索引
     currentIndex++;
   } else {
