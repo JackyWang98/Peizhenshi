@@ -45,10 +45,12 @@ function loadNextMessage() {
 
       // 添加按钮点击事件
       nextButton.addEventListener("click", function () {
-        // 隐藏聊天框
-        document.querySelector(".chat-container").style.display = "none";
-        // 显示标题
-        document.getElementById("why-young-people").style.display = "block";
+        // 渐隐聊天框
+        document.querySelector(".chat-container").classList.add("fade-out");
+        // 渐显标题
+        const title = document.getElementById("why-young-people");
+        title.style.display = "block";
+        title.classList.add("fade-in");
       });
     }
 

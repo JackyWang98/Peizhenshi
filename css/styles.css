@@ -113,3 +113,80 @@ body {
 #section3 {
   background-color: green;
 }
+
+/* 渐隐动画 */
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* 渐显动画 */
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#section3 h3 {
+  position: absolute;
+  top: 20px; /* 设置顶部边距 */
+  left: 20px; /* 设置左侧边距 */
+  margin: 0; /* 移除默认的外边距 */
+}
+
+#why-young-people {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 3em; /* 放大字体 */
+  opacity: 0; /* 初始透明度 */
+  transition: opacity 1s; /* 渐显动画 */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.text-container {
+  margin-bottom: 20px; /* 添加底部边距 */
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh; /* 设置高度 */
+}
+
+.responsive-iframe {
+  width: 80%;
+  height: 100%;
+  border: none;
+}
+
+.p1 {
+  font-size: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
