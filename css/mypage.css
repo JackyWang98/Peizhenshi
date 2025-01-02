@@ -1,0 +1,26 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#section1 {
+  background-color: blue;
+}
+
+#section2 {
+  background-color: white;
+}
+
+#section3 {
+  background-color: green;
+}
+
+#section3 h3 {
+  position: absolute;
+  top: 20px; /* 设置顶部边距 */
+  left: 20px; /* 设置左侧边距 */
+  margin: 0; /* 移除默认的外边距 */
+}
