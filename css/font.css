@@ -1,16 +1,16 @@
 #why-young-people {
   position: absolute;
+  margin: 0;
+  font-size: 4em; /* 放大字体 */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+  opacity: 0; /* 初始透明度 */
+  transition: opacity 1s; /* 渐显动画 */
+  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-size: 3em; /* 放大字体 */
-  opacity: 0; /* 初始透明度 */
-  transition: opacity 1s; /* 渐显动画 */
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
-  z-index: 2;
 }
 
 .p1 {
@@ -19,8 +19,8 @@
   margin-right: 10px;
 }
 
-.h1 {
-  font-size: 3em; /* 调整字体大小 */
+h1 {
+  font-size: 7em; /* 调整字体大小 */
   color: #ffffff; /* 设置字体颜色 */
   text-align: center; /* 居中对齐文本 */
   margin: 0;
@@ -30,13 +30,21 @@
   animation: fadeIn 2s forwards; /* 淡入效果 */
 }
 
-.h2 {
-  position: absolute;
-  transform: translate(-50%, -50%);
+h2 {
   font-size: 3em; /* 放大字体 */
   color: white;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
   opacity: 0; /* 初始透明度 */
   animation: fadeIn 2s forwards; /* 淡入效果 */
+}
+
+h3 {
+  position: absolute;
+  top: 20px; /* 设置顶部边距 */
+  left: 20px; /* 设置左侧边距 */
+  margin: 0; /* 移除默认的外边距 */
+  padding: 20px; /* 设置内边距 */
+  font-size: 50px; /* 设置字体大小 */
+  color: white;
 }

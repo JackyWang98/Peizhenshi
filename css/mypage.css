@@ -26,11 +26,11 @@
   background-repeat: no-repeat;
 }
 
-#section3 h3 {
-  position: absolute;
-  top: 20px; /* 设置顶部边距 */
-  left: 20px; /* 设置左侧边距 */
-  margin: 0; /* 移除默认的外边距 */
+#section4 {
+  background-image: url(/images/pic02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .background-blur {
