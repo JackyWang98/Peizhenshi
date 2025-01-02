@@ -7,10 +7,36 @@
   font-size: 3em; /* 放大字体 */
   opacity: 0; /* 初始透明度 */
   transition: opacity 1s; /* 渐显动画 */
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+  z-index: 2;
 }
 
 .p1 {
   font-size: 1.5em;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.h1 {
+  font-size: 3em; /* 调整字体大小 */
+  color: #ffffff; /* 设置字体颜色 */
+  text-align: center; /* 居中对齐文本 */
+  margin: 0;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
+  opacity: 0; /* 初始透明度 */
+  animation: fadeIn 2s forwards; /* 淡入效果 */
+}
+
+.h2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 3em; /* 放大字体 */
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+  opacity: 0; /* 初始透明度 */
+  animation: fadeIn 2s forwards; /* 淡入效果 */
 }
