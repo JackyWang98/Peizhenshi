@@ -1,3 +1,7 @@
+#fp-nav ul li a span {
+  background: #fc0000;
+}
+
 .section {
   display: flex;
   justify-content: center;
@@ -13,21 +17,21 @@
 }
 
 #section2 {
-  background-image: url(https://jackywang98.github.io/Peizhenshi/images/pic02.jpg);
+  background-color: rgb(28, 28, 161);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #section3 {
-  background-image: url(https://jackywang98.github.io/Peizhenshi/images/pic02.jpg);
+  background-color: rgb(28, 28, 161);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #section4 {
-  background-image: url(/images/pic02.jpg);
+  background-color: rgb(28, 28, 161);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
