@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/fullpage.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/mypage.css" />
+    <link rel="stylesheet" href="css/chat.css" />
     <style>
       .fp-watermark {
         display: none;
@@ -19,8 +20,8 @@
       <!-- 第一页 -->
       <div class="section" id="section1">
         <h1 class="fade-in">
-          <span>陪诊师：</span><br />
-          <span>孤独时代的温暖陪伴</span>
+          <span class="title-line">陪诊师：</span><br />
+          <span class="title-line">孤独时代的温暖陪伴</span>
         </h1>
       </div>
       <!-- 第二页 -->
@@ -31,7 +32,11 @@
             <button id="next-button">开始聊天</button>
           </div>
         </div>
-        <h2 id="why-young-people" style="display: none; opacity: 0">
+        <h2
+          id="why-young-people"
+          class="centered-text"
+          style="display: none; opacity: 0"
+        >
           <span style="font-size: larger">Part.1</span><br />
           <span>为什么是年轻人？</span>
         </h2>
@@ -45,46 +50,39 @@
               2022年四川观察发布了一条《陪诊师：病人超一半是年轻人，他们比老人更孤独》的视频，引发了大家的激烈讨论，评论内容更加证实了年轻人已成为陪诊行业的消费主力军。
             </p>
           </div>
-          <div class="iframe-container">
-            <iframe
-              src="https://www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&aid=563160927&bvid=BV1vv4y1d7zS&cid=906793319&p=1&autoplay=1&high_quality=1&muted=0"
-              class="responsive-iframe"
-            ></iframe>
-          </div>
         </div>
       </div>
       <!-- 第四页 -->
       <div class="section" id="section4">
         <h2 class="fade-in">
-          <span>Part2.</span><br />
-          <span>“他们是谁？撑起孤独病房的无名英雄”</span>
+          Part2.<br />
+          “他们是谁？撑起孤独病房的无名英雄”
         </h2>
       </div>
 
       <div class="section" id="section4">
         <h2 class="fade-in">
-          <span>Part3.</span> <br />
-          <span>“陌生又熟悉的陪伴：他们如何抚平就医路上的孤独”</span>
-        </h2>
-      </div>
-
-      <div class="section" id="section4">
-        <h2 class="h2 fade-in">
-          <span>Part4.</span><br />
-          <span>“破碎与重塑：陪诊师行业的未来蓝图”</span>
+          Part3. <br />
+          “陌生又熟悉的陪伴：他们如何抚平就医路上的孤独”
         </h2>
       </div>
 
       <div class="section" id="section4">
         <h2 class="fade-in">
-          <span>Part5.</span><br />
-          <span>“在孤独的城市，点燃陪伴的微光”</span>
+          Part4. <br />
+          “陪诊师的未来：从业者的挑战与机遇”
+        </h2>
+      </div>
+      <div class="section" id="section4">
+        <h2 class="fade-in">
+          Part5.<br />
+          “在孤独的城市，点燃陪伴的微光”
         </h2>
       </div>
     </div>
 
     <script src="js/fullpage.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/chat.js"></script>
     <script>
       new fullpage("#fullpage", {
         anchors: ["firstPage", "secondPage", "thirdPage"],

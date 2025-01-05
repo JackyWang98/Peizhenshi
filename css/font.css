@@ -1,5 +1,4 @@
 #why-young-people {
-  position: absolute;
   display: flex;
   margin: 0;
   font-size: 5vh; /* 放大字体 */
@@ -8,9 +7,6 @@
   opacity: 0; /* 初始透明度 */
   transition: opacity 1s; /* 渐显动画 */
   z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   margin: 0;
 }
 
@@ -35,6 +31,8 @@ h1 {
 h2 {
   font-size: 6vh; /* 放大字体 */
   display: flex;
+  margin: 0;
+  padding: 3vh;
   color: white;
   text-align: center;
   text-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
