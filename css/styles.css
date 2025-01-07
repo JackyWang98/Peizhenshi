@@ -46,10 +46,6 @@ body {
   }
 }
 
-.text-container {
-  margin-bottom: 20px; /* 添加底部边距 */
-}
-
 .responsive-iframe {
   width: 80%;
   height: 100%;

@@ -10,11 +10,35 @@
   width: 100vw;
 }
 
+/* 首页start */
+
 #section1 {
   background-color: rgb(28, 28, 161);
   background-position: center;
   background-size: cover;
 }
+
+h1 {
+  display: flex;
+  font-size: 100px; /* 调整字体大小 */
+  color: #ffffff; /* 设置字体颜色 */
+  text-align: center; /* 居中对齐文本 */
+  margin: 0;
+  padding: 3px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
+  opacity: 0; /* 初始透明度 */
+  animation: fadeIn 2s forwards; /* 淡入效果 */
+}
+
+.p0 {
+  font-size: 20px;
+  text-align: left;
+  color: white;
+}
+
+/* 首页end */
+
+/* 第二页start */
 
 #section2 {
   background-color: rgb(28, 28, 161);
@@ -22,6 +46,32 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+#why-young-people {
+  display: flex;
+  margin: 0;
+  font-size: 50px; /* 放大字体 */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+  opacity: 0; /* 初始透明度 */
+  transition: opacity 1s; /* 渐显动画 */
+  z-index: 2;
+  margin: 0;
+}
+
+h2 {
+  font-size: 50px; /* 放大字体 */
+  display: flex;
+  margin: 0;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+  opacity: 0; /* 初始透明度 */
+  animation: fadeIn 2s forwards; /* 淡入效果 */
+}
+
+/* 第二页end */
 
 /* 第三页start */
 #section3 {
@@ -31,23 +81,38 @@
   background-repeat: no-repeat;
 }
 
-.content {
+.content1 {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 25%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 250px;
+  width: 500px;
+  height: 350px;
 }
 
 .bilibili {
   display: flex;
-  width: 400px;
-  height: 450px;
-  margin-right: 30%;
+  position: absolute;
+  width: 600px;
+  height: 858px;
+  top: 0%;
+  right: 5%;
 }
+
+.p1 {
+  font-size: 45px;
+  text-align: left;
+  color: white;
+}
+
+.highlight {
+  color: #fbff00; /* 设置字体颜色 */
+  text-decoration: none; /* 移除下划线 */
+}
+
 /* 第三页end */
 
+/* 第四页start */
 #section4 {
   background-color: rgb(28, 28, 161);
   background-position: center;
@@ -55,6 +120,16 @@
   background-repeat: no-repeat;
 }
 
+.content2 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 350px;
+}
+
+/* 第四页end */
 #section5 {
   background-color: rgb(28, 28, 161);
   background-position: center;
